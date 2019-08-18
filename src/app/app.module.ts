@@ -5,7 +5,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProductModule } from './product/product.module';
-import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 
 @NgModule({
@@ -16,7 +15,7 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     BrowserModule,
     AppRoutingModule,
     ProductModule
-  ],  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
+  ],  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
