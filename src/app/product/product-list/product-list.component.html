@@ -1,5 +1,13 @@
-<p>product-list works!</p>
-
-<li *ngFor="let product of products">
-  <span class="badge">{{product.id}}</span> {{product.name}}
-</li>
+<h1>Products list:</h1>
+<table class="table">
+  <tr>
+    <th>Product name</th>
+    <th>Category id</th>
+    <th>Price</th>
+  </tr>
+  <tr *ngFor="let product of products">
+    <td>{{product.name}}</td>
+    <td>{{product.category_id}}</td>
+    <td>{{product.price}}</td>
+  </tr>
+</table>
