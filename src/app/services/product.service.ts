@@ -17,4 +17,8 @@ export class ProductService {
     return this.http.get(this.BACKEND_URL + "products");
   }
 
+  createProduct(form: any) {
+    return this.http.post(this.BACKEND_URL + "products", form);
+  }
+
 }
