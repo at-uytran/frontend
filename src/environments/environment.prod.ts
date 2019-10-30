@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  backendURL: "http://api.uytran.tk/api/v1/"
+  backendURL: "https://api.uytran.tk/api/v1/"
 };
